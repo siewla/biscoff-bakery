@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs') %>
+    </head>
+    <body>
+        <h2>Adding a New Item of Baked Goods</h2>
+        <form action="/bakedgoods" method="POST">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" />
+			<label for="price">Price</label>
+            <input type="text" name="price" id="price" />
+            <label for="image">Image URL</label>
+			<input type="text" name="image" id="image-url" />
+			<input type="submit" value="Create Item" />
+		</form>
+    </body>
+</html>

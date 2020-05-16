@@ -1,0 +1,16 @@
+  
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs') %>
+    </head>
+    <body>
+        <h2>Baked Goods</h2>
+        <% bakedGoods.forEach((item, index) => { %>
+            <li>
+                <a href="/bakedGoods/<%=index%>"><%=item.name%></a>
+            </li>
+        <% }) %>
+        <a href="/bakedgoods/new">Add New Item</a>
+    </body>
+</html>
